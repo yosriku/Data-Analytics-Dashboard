@@ -103,6 +103,7 @@ st.pyplot(fig)
 # Bar chart for total customers and sellers by state
 st.subheader("Total Number of Customers and Sellers by State")
 
+
 customer_state_counts = customers['customer_state'].value_counts().reset_index()
 customer_state_counts.columns = ['state', 'num_customers']
 
@@ -119,6 +120,7 @@ ax.set_title("Total Number of Customers and Sellers by State")
 ax.set_xlabel("State")
 ax.set_ylabel("Number of Customers and Sellers")
 st.pyplot(fig)
+
 
 st.subheader("Scatter Plot: Harga Produk vs Biaya Pengiriman")
 fig, ax = plt.subplots(figsize=(8, 6))
