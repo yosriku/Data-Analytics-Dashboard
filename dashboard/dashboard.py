@@ -6,11 +6,11 @@ import streamlit as st
 # Load data (adjust the path as needed)
 @st.cache_data
 def load_data():
-    orders = pd.read_csv('C:\\Yosriko\\SEMESTER 7\\Seleksi Mentor\\Data Analytics Submission - Dicoding\\dataset\\olist_orders_dataset.csv')
-    order_items = pd.read_csv('C:\\Yosriko\\SEMESTER 7\\Seleksi Mentor\\Data Analytics Submission - Dicoding\\dataset\\olist_order_items_dataset.csv')
-    products = pd.read_csv('C:\\Yosriko\\SEMESTER 7\\Seleksi Mentor\\Data Analytics Submission - Dicoding\\dataset\\olist_products_dataset.csv')
-    customers = pd.read_csv('C:\\Yosriko\\SEMESTER 7\\Seleksi Mentor\\Data Analytics Submission - Dicoding\\dataset\\olist_customers_dataset.csv')
-    reviews = pd.read_csv('C:\\Yosriko\\SEMESTER 7\\Seleksi Mentor\\Data Analytics Submission - Dicoding\\dataset\\olist_order_reviews_dataset.csv')
+    orders = pd.read_csv('dataset\\olist_orders_dataset.csv')
+    order_items = pd.read_csv('dataset\\olist_order_items_dataset.csv')
+    products = pd.read_csv('dataset\\olist_products_dataset.csv')
+    customers = pd.read_csv('dataset\\olist_customers_dataset.csv')
+    reviews = pd.read_csv('dataset\\olist_order_reviews_dataset.csv')
 
     # Convert date columns from string to datetime
     orders['order_purchase_timestamp'] = pd.to_datetime(orders['order_purchase_timestamp'])
