@@ -3,3 +3,4 @@ geopandas==0.10.2
 matplotlib==3.6.2
 seaborn==0.12.2
 streamlit==1.20.0
+numpy==1.26.4
