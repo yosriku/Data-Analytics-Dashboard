@@ -132,11 +132,11 @@ fig, ax = plt.subplots(figsize=(10, 10))
 customers_gdf.plot(ax=ax, markersize=1, color='blue', alpha=0.6, label='Customers')
 sellers_gdf.plot(ax=ax, markersize=1, color='red', alpha=0.6, label='Sellers')
 
-plt.legend()
-plt.title('Geospatial Distribution of Customers and Sellers')
-plt.xlabel('Longitude')
-plt.ylabel('Latitude')
-st.pyplot(fig)
+# plt.legend()
+# plt.title('Geospatial Distribution of Customers and Sellers')
+# plt.xlabel('Longitude')
+# plt.ylabel('Latitude')
+# st.pyplot(fig)
 
 # Scatter Plot: Harga vs Biaya Pengiriman
 st.subheader("Scatter Plot: Harga Produk vs Biaya Pengiriman")
