@@ -121,16 +121,16 @@ st.pyplot(fig)
 st.subheader("Geospatial Distribution of Customers and Sellers")
 
 # Merge customers and sellers with geolocation
-customers_geo = pd.merge(customers, geolocation, left_on='customer_zip_code_prefix', right_on='geolocation_zip_code_prefix', how='left')
-sellers_geo = pd.merge(sellers, geolocation, left_on='seller_zip_code_prefix', right_on='geolocation_zip_code_prefix', how='left')
+# customers_geo = pd.merge(customers, geolocation, left_on='customer_zip_code_prefix', right_on='geolocation_zip_code_prefix', how='left')
+# sellers_geo = pd.merge(sellers, geolocation, left_on='seller_zip_code_prefix', right_on='geolocation_zip_code_prefix', how='left')
 
-# Convert to GeoDataFrame
-customers_gdf = gpd.GeoDataFrame(customers_geo, geometry=gpd.points_from_xy(customers_geo.geolocation_lng, customers_geo.geolocation_lat))
-sellers_gdf = gpd.GeoDataFrame(sellers_geo, geometry=gpd.points_from_xy(sellers_geo.geolocation_lng, sellers_geo.geolocation_lat))
+# # Convert to GeoDataFrame
+# customers_gdf = gpd.GeoDataFrame(customers_geo, geometry=gpd.points_from_xy(customers_geo.geolocation_lng, customers_geo.geolocation_lat))
+# sellers_gdf = gpd.GeoDataFrame(sellers_geo, geometry=gpd.points_from_xy(sellers_geo.geolocation_lng, sellers_geo.geolocation_lat))
 
-fig, ax = plt.subplots(figsize=(10, 10))
-customers_gdf.plot(ax=ax, markersize=1, color='blue', alpha=0.6, label='Customers')
-sellers_gdf.plot(ax=ax, markersize=1, color='red', alpha=0.6, label='Sellers')
+# fig, ax = plt.subplots(figsize=(10, 10))
+# customers_gdf.plot(ax=ax, markersize=1, color='blue', alpha=0.6, label='Customers')
+# sellers_gdf.plot(ax=ax, markersize=1, color='red', alpha=0.6, label='Sellers')
 
 # plt.legend()
 # plt.title('Geospatial Distribution of Customers and Sellers')
