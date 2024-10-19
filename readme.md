@@ -9,10 +9,9 @@ This project is an E-commerce dashboard built with Streamlit, allowing users to 
   - [Installation and Setup](#installation-and-setup)
   - [Running the App Locally](#running-the-app-locally)
   - [Deployed Version](#deployed-version)
-  - [Project Structure](#project-structure)
 
 ## Prerequisites
-- Python 3.8 or higher
+- Python 3.9 or higher
 - `pip` (Python package manager)
 
 ## Installation and Setup
@@ -57,10 +56,8 @@ This project is an E-commerce dashboard built with Streamlit, allowing users to 
 
 1. **Run the Streamlit app**:
     ```bash
-    streamlit run app.py
+    streamlit run dashboard.py
     ```
-
-   Replace `app.py` with the name of your script file containing the Streamlit code if different.
 
 2. **Open the app**:
    - After running the command above, Streamlit will provide a URL (usually `http://localhost:8501`).
@@ -73,4 +70,3 @@ The dashboard has been deployed and is accessible online:
 
 Feel free to explore the data and insights directly on the deployed version!
 
-## Project Structure
